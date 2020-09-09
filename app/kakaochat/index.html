@@ -184,6 +184,7 @@
                   // url = $form.attr( "action" );
                   // url = "http://xxxxxxxxxx.com/wp-data-update/app/kakaochat/";
                   url = "https://update.wp-data.com/app/kakaochat/";
+                  msg_processing = '잠시만 기다려 주세요 ...';
                   msg_success = '<span class="text-success"><i class="fas fa-check"></i> 이메일이 발송되었습니다.<br>이메일이 도착하지 않았다면, 스팸 메일함을 확인해 보세요</span>';
                   msg_failure = '<span class="text-danger"><i class="fas fa-check"></i> 오류가 발생하였습니다. 관리자에게 문의해 주세요</span>';
 
@@ -191,6 +192,8 @@
                 email: email,
                 human_check: human_check
               }
+
+              $( "#result" ).html( msg_processing );
 
               var posting = $.post( url, datas );
 
