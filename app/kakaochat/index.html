@@ -180,13 +180,19 @@
 
               var $form = $( this ),
                   email = $form.find( "input[name='email']" ).val(),
+                  human_check = $form.find( "input[name='human-check']" ).val(),
                   url = $form.attr( "action" );
                   // url = "https://www.wp-data.com/.../";
                   msg_success = '<span class="text-success"><i class="fas fa-check"></i> 이메일이 발송되었습니다</span>';
                   msg_failure = '<span class="text-danger"><i class="fas fa-check"></i> 오류가 발생하였습니다. 관리자에게 문의해 주세요</span>';
 
+              var datas = {
+                email: email,
+                human_check: human_check
+              }
+
               // Send the data using post
-              var posting = $.post( url, { email: email } );
+              var posting = $.post( url, datas );
 
               posting.done(function( data ) {
 
