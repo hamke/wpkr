@@ -192,11 +192,10 @@
                 human_check: human_check
               }
 
-              // Send the data using post
               var posting = $.post( url, datas );
 
               posting.done(function( data ) {
-                console.log(data);
+
                 $( "#email" ).val('');
                 $( "#result" ).html( msg_success );
 
