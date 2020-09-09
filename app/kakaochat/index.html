@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap/4.3.1/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/all.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome-animation.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets-layout/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./assets-layout/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="./assets-layout/css/style.css">
+    <script src="./assets/js/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap/4.3.1/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div id="page" class="site">
+      <header id="masthead" class="site-header" role="banner">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-offcanvas navbar-light" style="padding:.74rem 1rem;">
+
+          <div class="row w-100">
+
+            <div class="col-2 col-lg-3 my-auto">
+
+              <button class="navbar-toggler d-inline border-0" type="button" id="navToggle">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <span class="nav-link d-none d-lg-inline px-2">
+                <a href="#">
+                  <!-- 최신 정보 공유 커뮤니티 -->
+                </a>
+              </span>
+
+            </div>
+
+            <div class="col-8 col-lg-6 my-auto">
+
+            <div class="text-center py-1">
+              <!-- Brand Logo -->
+              <a class="navbar-brand site-title d-inline mx-auto" href="./">
+                <img src="https://hellotblog.files.wordpress.com/2020/09/icon-heart-handcraft-01-120x120-1.png" id="brand-image" class="d-inline align-top mr-1" style="width:20px;" alt="">
+                <span class="font-weight-bold" style="letter-spacing:1px;">WP-KR.COM</span>
+              </a>
+            </div>
+
+          </div>
+
+          <div class="col-2 col-lg-3 my-auto">
+
+            <div class="navbar-links text-right">
+
+              <div id="main-nav" class="main-nav d-none d-lg-inline-block pr-4">
+                <ul id="menu-account-links" class="navbar-nav">
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66 nav-item">
+                    <a href="https://news.wp-kr.com/" target="_blank" class="nav-link">
+                      매거진
+                    </a>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66 nav-item">
+                    <a title="카카오톡 문의" href="https://www.wp-kr.com/kakao/" class="nav-link" target="_blank">
+                      카카오톡 문의
+                    </a>
+                  </li>
+                 </ul>
+               </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- <div class="container-fluid searchbardiv pt-3 pb-4 border-bottom" id="formsearch">
+          <form role="search" method="get" id="searchform" action="#">
+            <div class="input-group container">
+              <input type="text" id="searchbox" class="form-control text-center" name="s" id="s" placeholder="검색어를 입력해 주세요" required >
+              <div class="input-group-btn ml-1">
+                <button class="btn btn-default" id="searchsubmit" type="submit">
+                  <strong>검색</strong>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <button type="button" class="buttonsearch" id="buttonsearch">
+          <i class="fas fa-search openclosesearch"></i><i class="fas fa-times openclosesearch" style="display:none"></i>
+        </button> -->
+
+      </nav>
+
+      <div class="sidebar navbar-light navbar-collapse offcanvas-collapse bg-light pl-5 shadow">
+        <div id="main-nav" class="menu-main-container">
+          <div class="pt-3 pb-1 pr-3 text-center">
+            <a href="./">
+              <img src="https://hellotblog.files.wordpress.com/2020/09/icon-heart-handcraft-01-120x120-1.png" style="width:50px;" alt="">
+            </a>
+          </div>
+          <ul id="menu-main" class="navbar-nav mr-auto pt-3">
+            <li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66 nav-item">
+              <a href="https://news.wp-kr.com/" target="_blank" class="nav-link">
+                워드프레스웹코리아 매거진
+              </a>
+            </li>
+            <li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66 nav-item">
+              <a href="https://www.wp-data.com/kr/" target="_blank" class="nav-link">
+                워드프레스 애널리틱스
+              </a>
+            </li>
+            <li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66 nav-item">
+              <a href="https://www.wpsalenow.com/kr/" target="_blank" class="nav-link">
+                워드프레스 세일 나우
+              </a>
+            </li>
+            <li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66 nav-item">
+              <a href="http://www.wp-viewer.com/kr/" target="_blank" class="nav-link">
+                워드프레스 사이트 랜덤 뷰어
+              </a>
+            </li>
+            <li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66 nav-item">
+              <a title="카카오톡 문의" href="https://www.wp-kr.com/kakao/" target="_blank" class="nav-link">
+                카카오톡 문의
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div> <!-- .sidebar -->
+
+	   </header>
+
+      <div id="content" class="site-content header-not-frontpage">
+        <div class="container">
+          <!-- content : Start -->
+
+          <div class="intro pt-4 pb-3 text-center">
+            <a href="./">
+              <img src="https://hellotblog.files.wordpress.com/2019/07/kakaotalk-chat-button-100x100.png" alt="" style="width:80px;">
+            </a>
+          </div>
+
+          <div class="pt-3 pb-4 text-center">
+            <h1 style="font-size:1.2rem;" class="font-weight-bold">
+              워드프레스웹코리아 카카오톡 오픈 채팅방
+            </h1>
+            <a href="https://www.wp-kr.com/kakaochat/" target="_blank" style="text-decoration:none;">
+              www.wp-kr.com/kakaochat/
+            </a>
+          </div>
+
+          <div class="row">
+
+            <div class="col-12 col-lg-6 mx-auto pt-2 pb-4">
+
+              <form class="form-inline" id="searchForm" action="./" role="form">
+                <div class="form-row align-items-center w-100">
+                  <input type="email" name="email" id="email" placeholder="이메일 입력" class="form-control col-9 text-center" onclick="this.value=''" style="" autofocus required>
+                  <input type="text" name="human-check" id="human-check" class="human-check">
+                  <input type="submit" name="submit" id="submit" value="확인" class="btn btn-dark col-3">
+                </div>
+              </form>
+
+            </div>
+
+          </div> <!-- .row -->
+
+          <div class="mt-3 text-center">
+            <span id="result">
+              <i class="fas fa-bolt"></i> <b>카카오톡 오픈 채팅방 입장 코드</b>를 받을 <b>이메일 주소</b>를 입력해 주세요
+            </span>
+          </div>
+
+          <script type="text/javascript">
+            $( "#searchForm" ).submit(function( e ) {
+
+              e.preventDefault();
+
+              var $form = $( this ),
+                  email = $form.find( "input[name='email']" ).val(),
+                  url = $form.attr( "action" );
+                  // url = "https://www.wp-data.com/.../";
+                  msg_success = '<span class="text-success"><i class="fas fa-check"></i> 이메일이 발송되었습니다</span>';
+                  msg_failure = '<span class="text-danger"><i class="fas fa-check"></i> 오류가 발생하였습니다. 관리자에게 문의해 주세요</span>';
+
+              // Send the data using post
+              var posting = $.post( url, { email: email } );
+
+              posting.done(function( data ) {
+
+                $( "#email" ).val('');
+                $( "#result" ).html( msg_success );
+
+              });
+            });
+          </script>
+
+          <!-- Content : End -->
+        </div> <!-- container -->
+      </div> <!-- .site-content -->
+
+      <div class="footer mt-2 bg-light shadow" style="position:fixed; bottom:0; width:100%;">
+
+        <!-- <div class="container business-info pt-4 text-center" style="font-size:0.9rem; opacity:0.7;">
+        </div> -->
+
+        <div class="container footer-text text-center py-4 text-secondary">
+          <a href="./" target="_blank">©</a> <span class="post-year"></span> <span class="text-secondary" style="text-decoration:none;"><b>WP-KR.COM</b></span>
+        </div>
+
+      </div>
+
+      <a id="chat-button" href="https://www.wp-talk.com/kakao/" target="_blank" style="">
+        <img src="https://hellotblog.files.wordpress.com/2019/07/kakaotalk-chat-button-100x100.png">
+      </a>
+
+      <a id="back-to-top" href="#" class="" title="Go To Top"><i class="fas fa-chevron-up"></i></a>
+
+      <style>
+        .human-check {
+          display: none;
+        }
+      </style>
+      <script src="./assets-layout/js/navbar.js"></script>
+      <script src="./assets-layout/js/main.js"></script>
+      <script src="./assets-layout/js/custom.js"></script>
+
+    </div>
+
+  </body>
+
+</html>
